@@ -6,11 +6,11 @@ import numpy as np
 from PIL import Image, ImageTk
 
 # Load the trained model
-json_file = open("c:/Users/Guptaji/Cifar10_project/model.json", 'r')
+json_file = open("C:\\Users\\gupta\\Downloads\\CIFAR-10_Image_Classification-main\\CIFAR-10_Image_Classification-main\\model.json", 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 model = model_from_json(loaded_model_json)
-model.load_weights("C:/Users/Guptaji/Cifar10_project/model.h5")
+model.load_weights("C:\\Users\\gupta\\Downloads\\CIFAR-10_Image_Classification-main\\CIFAR-10_Image_Classification-main\\model.weights.h5")
 
 # Class names
 class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer',
